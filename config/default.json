@@ -1,0 +1,17 @@
+{
+    "mongo": {
+      "host": "localhost",
+      "port": "27017",
+      "database": "sooryen",
+      "server": {
+        "auto_reconnect": true,
+        "autoReconnect": true,
+        "reconnectTries": 2000,
+        "reconnectInterval": 1000
+      }
+    },
+    "server": {
+      "host": "localhost",
+      "port": 3000
+    }
+}
