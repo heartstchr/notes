@@ -20,6 +20,6 @@ app.delete('/note', function (req, res) {
 })
 
 app.use('/static', express.static('public'));
-app.use('/module', express.static('client/node_modules'));
+app.use('/module', express.static('client'));
 
 app.listen(Config.server.port, () => console.log(`Example app listening on port ${Config.server.port}!`))

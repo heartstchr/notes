@@ -19,12 +19,10 @@
             <div class="form-group" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
                 <label for="email">Email ID</label>
                 <input type="email" name="email" id="email" class="form-control" ng-model="vm.email" required />
-                <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email ID is required</span>
             </div>
             <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
-                <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
             </div>
             <div class="form-actions">
                 <button type="submit" ng-disabled="form.$invalid" class="btn">Login</button>
@@ -32,7 +30,10 @@
         </form>
     </div>
       
-      <script src = "module/angular/angular.min.js">
+      <script src = "module/node_modules/angular/angular.min.js">
+      </script>
+      <script src = "module/app.js"></script>
+      <script src = "module/controller/login.js">
       </script>
       
    </body>
