@@ -1,0 +1,1 @@
+//any global variable required in many places
