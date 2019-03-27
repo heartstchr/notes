@@ -1,9 +1,12 @@
 const express = require('express')
+
+const path = require('path')
 const app = express()
 const port = 3000
 
+const db = require('./database.js')
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.sendFile('views/index.html', {root: __dirname + '/client' }))
 app.post('/notes', function (req, res) {
     res.send('Got a POST request')
 })

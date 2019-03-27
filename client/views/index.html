@@ -1,15 +1,30 @@
 <html>
    <head>
       <title>AngularJS First Application</title>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
    </head>
    
-   <body>
-      <h1>Sample Application</h1>
+   <body ng-app = "myApp">
+      <h1>Login</h1> 
+      <form>      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" ng-model="greeting" required>
       
-      <div ng-app = "myApp">
-         <p>Enter your Name: <input type = "text" ng-model = "name"></p>
-         <p>Hello <span ng-bind = "name"></span>!</p>
-      </div>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" ng-model="psw" required>
+      
+          <button type="submit" >Login</button>
+        </div>
+      </form>
       
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
       </script>
